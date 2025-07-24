@@ -7,7 +7,6 @@ import { MdRotate90DegreesCw, MdZoomIn, MdZoomOut } from 'react-icons/md'
 
 import 'react-photo-view/dist/react-photo-view.css'
 import styles from './Images.module.css'
-import Head from 'next/head'
 
 const imagesSrcArray = [
   '/assets/gutter-work/gutter-cleaning-repair-nanaimo-1.webp',
@@ -35,14 +34,6 @@ export const Images = () => {
 
   return (
     <div className={styles.wrapper}>
-      {!isShowAll && (
-        <Head>
-          {imagesSrcArray.map((src, index) => (
-            <link key={index} rel="preload" as="image" href={src} />
-          ))}
-        </Head>
-      )}
-
       <PhotoProvider
         speed={() => 800}
         easing={(type) =>
