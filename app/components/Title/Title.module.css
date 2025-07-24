@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+
+    &:before, &:after {
+        border-block-end: 0;
+        border-block-start: 1px solid #b4b8c6;
+        content: "";
+        display: block;
+        flex-grow: 1;
+    }
+
+    h3 {
+        color: #e9eaeb;
+        text-align: center;
+        word-spacing: .2rem;
+        letter-spacing: .03rem;
+        font-size: clamp(2.4rem, 2rem + 1.5vw, 3rem);
+        font-weight: 400;
+    }
+}

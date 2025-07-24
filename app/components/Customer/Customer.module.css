@@ -1,0 +1,36 @@
+.container {
+  margin-bottom: 14rem;
+}
+
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1rem;
+}
+
+.text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-family: inherit;
+  font-weight: 400;
+  word-spacing: 0.1rem;
+  flex: 1;
+}
+
+.image {
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+@media (max-width: 680px) {
+  .wrapper {
+    flex-direction: column;
+  }
+}
+

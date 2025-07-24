@@ -1,0 +1,19 @@
+.link_container {
+    display: flex;
+
+    .link {
+        background: #fc6d17;
+        text-decoration: none;
+        padding: 0.6rem 1rem;
+        color: #e9eaeb;
+        text-transform: uppercase;
+        margin: auto;
+        border-radius: 2px;
+        transition: background-color 0.4s;
+        white-space: nowrap;
+
+        &:hover {
+            background: #ec5f0a;
+        }
+    }
+}

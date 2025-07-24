@@ -1,0 +1,23 @@
+.container {
+    background-color: #13151a;
+    padding: 0.4rem 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    background: #13151a;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 680px) {
+    .flex {
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+}
