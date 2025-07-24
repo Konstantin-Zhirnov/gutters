@@ -7,9 +7,9 @@ import './globals.css'
 import { Phone } from '@/app/components/Phone'
 
 export const metadata: Metadata = {
-  title: 'Havana classic car tours',
+  title: 'Gutters | Victoria, Nanaimo, Campbell River | Fast service - Aarsen Gutters',
   description:
-    'One of the most iconic ways to immerse oneself in the spirit of Havana is through a tour with Havana Classic Cars. You will enjoy a relaxing ride, travel with ease with an experience driver and witness authentic Cuban culture and lifestyle.',
+    'Get a free estimate in 24 hrs. Expert gutter installation, repair & cleaning in Victoria, Nanaimo & Campbell River. Trusted by 4000+ homeowners.',
 }
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
