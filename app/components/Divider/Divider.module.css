@@ -8,5 +8,23 @@
     background: rgb(250 250 250 / 4%);
     margin: auto;
   }
+
+  &.vertical {
+    width: 1px;
+    height: 80px;
+    background: rgb(250 250 250 / 4%);
+
+    .divider {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .container.vertical {
+    width: 8%;
+    margin: auto;
+    height: 1px;
+  }
 }
 

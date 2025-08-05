@@ -1,7 +1,7 @@
 .input_container {
-  width: 30%;
+  width: 46%;
 }
-.input_container.address {
+.input_container.full_size {
   width: 100%;
 }
 
@@ -30,18 +30,17 @@
 
 .error {
   position: absolute;
-  color: white;
+  color: red;
   font-size: 0.8rem;
   letter-spacing: 0.02rem;
+  margin-top: 4px;
+}
+
+.star {
+  font-size: 1.1rem;
 }
 
 @media (max-width: 680px) {
-  .input_container {
-    width: 46%;
-  }
-}
-
-@media (max-width: 460px) {
   .input_container {
     width: 100%;
   }

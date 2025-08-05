@@ -1,8 +1,11 @@
 import React from 'react'
-
+import cn from 'classnames'
 import { ErrorMessage } from '@hookform/error-message'
 
 import styles from './FormItem.module.css'
+
+const fullSize = ['Address', 'Additional']
+const require = ['First Name', 'Email']
 
 interface IProps {
   register: any
@@ -11,30 +14,10 @@ interface IProps {
   label: string
 }
 
-const FormItem: React.FC<IProps> = ({ register, name, errors, label }) => {
+export const FormItem: React.FC<IProps> = ({ register, name, errors, label }) => {
   const getInput = () => {
     switch (name) {
-      case 'date':
-        return (
-          <input
-            id={name}
-            type="date"
-            {...register(name)}
-            autoComplete="off"
-            className={styles.input}
-          />
-        )
-      case 'time':
-        return (
-          <input
-            id={name}
-            type="time"
-            {...register(name)}
-            autoComplete="off"
-            className={styles.input}
-          />
-        )
-      case 'additional':
+      case 'Additional':
         return (
           <textarea
             id={name}
@@ -48,12 +31,23 @@ const FormItem: React.FC<IProps> = ({ register, name, errors, label }) => {
     }
   }
 
+  const getRequire = () => {
+    if (require.includes(name)) {
+      return <span className={styles.star}> *</span>
+    }
+
+    return null
+  }
+
   return (
     <div
-      className={`${styles.input_container} ${name === 'address' || name === 'additional' ? styles.address : ''}`}
+      className={cn(styles.input_container, {
+        [styles.full_size]: fullSize.includes(name),
+      })}
     >
       <label htmlFor={name} className={styles.input_label}>
         {label}
+        {getRequire()}
       </label>
 
       {getInput()}
@@ -66,5 +60,3 @@ const FormItem: React.FC<IProps> = ({ register, name, errors, label }) => {
     </div>
   )
 }
-
-export { FormItem }

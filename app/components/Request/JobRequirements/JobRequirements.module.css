@@ -1,0 +1,19 @@
+.input_label {
+    font-size: 0.8rem;
+    color: #FFFFFF;
+    display: block;
+    letter-spacing: 0.024rem;
+    text-transform: uppercase;
+    margin-bottom: .6rem;
+}
+
+.input_container {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: .6rem;
+    cursor: pointer;
+
+    label, input {
+       cursor: pointer;
+    }
+}

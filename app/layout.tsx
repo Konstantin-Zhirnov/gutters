@@ -1,10 +1,12 @@
 import { ReactNode } from 'react'
 import type { Metadata } from 'next'
+import { ToastContainer } from 'react-toastify'
 
-import { Footer } from '@/app/components/Footer'
+import { ShowHeader } from './components/ShowHeader'
+import { Footer } from './components/Footer'
+import { Phone } from './components/Phone'
 
 import './globals.css'
-import { Phone } from '@/app/components/Phone'
 
 export const metadata: Metadata = {
   title: 'Gutters | Victoria, Nanaimo, Campbell River | Fast service - Aarsen Gutters',
@@ -16,11 +18,26 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
   return (
     <html lang="en">
       <body>
+        <ShowHeader />
+
         <main>{children}</main>
 
         <Footer />
 
         <Phone />
+
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick={false}
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="dark"
+        />
       </body>
     </html>
   )

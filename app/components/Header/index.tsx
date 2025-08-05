@@ -3,10 +3,10 @@
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 
-import { Wrapper } from '../Wrapper'
 import { Contacts } from './Contacts'
 import { Menu } from './Menu'
 import { MobileMenu } from './MobileMenu'
+import { Wrapper } from '../Wrapper'
 
 import styles from './Header.module.css'
 
@@ -38,7 +38,7 @@ export const Header = () => {
     <header className={styles.container}>
       <Wrapper classes={styles.header}>
         <div className={styles.flex}>
-          <Image alt="Aarsen gutters" height={135} src="/assets/logo.png" width={320} />
+          <Image alt="Aarsen gutters" height={135} src="/assets/logo.png" width={320} priority />
 
           <Contacts setIsMobileMenu={setIsMobileMenu} />
         </div>

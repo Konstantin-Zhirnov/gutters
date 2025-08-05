@@ -2,12 +2,12 @@
 
 import { motion } from 'framer-motion'
 
-import { Header } from '@/app/components/Header'
-import { Divider } from '@/app/components/Divider'
-import { Wrapper } from '@/app/components/Wrapper'
-import { ContactLink } from '@/app/components/ContactLink'
+import { Header } from '../Header'
+import { Divider } from '../Divider'
+import { Wrapper } from '../Wrapper'
+import { ContactLink } from '../ContactLink'
 
-import { heroAnimation } from '@/app/constants'
+import { heroAnimation } from '../../constants'
 
 import styles from './Hero.module.css'
 

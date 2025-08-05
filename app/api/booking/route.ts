@@ -19,18 +19,17 @@ export async function POST(req: Request) {
   try {
     await transporter.sendMail({
       from: 'kostya.zhirnov@gmail.com',
-      to: 'amramcueva1971@gmail.com',
-      subject: 'Booking from website',
-      html: `<div><b>Booking from website: havana-classic-cars.com</b></div>
-          <p><b>Name:</b> ${body.name}<br/>
+      to: 'kostya.zhirnov@gmail.com',
+      // to: 'aarsengutterscorp@gmail.com',
+      subject: 'Message from website',
+      html: `<div><b>Message from website: aarsengutters.ca</b></div>
+          <p><b>First Name:</b> ${body.firstName}<br/>
+          <b>Last Name:</b> ${body.lastName}<br/>
           <b>Phone:</b> ${body.phone}<br/>
-          <b>Nationality:</b> ${body.nationality}<br/>
-          <b>Travelers:</b> ${body.travelers}<br/>
-          <b>Date:</b> ${body.date}<br/>
-          <b>Time:</b> ${body.time}<br/>
+          <b>Email:</b> ${body.email}<br/>
+          <b>Job Requirements:</b> ${body.jobRequirements}<br/>
           <b>Address:</b> ${body.address}<br/>
-          <b>Additional:</b> ${body.additional}<br/>
-          <b>Guide:</b> ${body.guide}</p>`,
+          <b>Additional:</b> ${body.additional}</p>`,
     })
   } catch (error) {
     // @ts-ignore

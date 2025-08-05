@@ -1,11 +1,15 @@
+import Link from 'next/link'
+
+import { Certificates } from '../Certificates'
 import { Wrapper } from '../Wrapper'
 
 import styles from './Footer.module.css'
-import Link from 'next/link'
 
 export const Footer = () => {
   return (
     <footer className={styles.container}>
+      <Certificates />
+
       <Wrapper classes={styles.wrapper}>
         <div>
           <p className={styles.title}>Monday – Saturday</p>

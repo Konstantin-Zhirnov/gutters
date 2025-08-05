@@ -4,5 +4,5 @@ export const links = [
   { path: '/gutter-installation', title: 'Cleaning & Repair' },
   { path: '/gutter-installation', title: 'Soffit · Fascia · Cladding' },
   { path: '/gutter-installation', title: 'About Us' },
-  { path: '/gutter-installation', title: 'Contact' },
+  { path: '/contact', title: 'Contact' },
 ]

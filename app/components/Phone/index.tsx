@@ -3,9 +3,7 @@ import styles from './Phone.module.css'
 export const Phone = () => (
   <a href="tel:+12502681249" className={styles.btn}>
     <svg
-      stroke="currentColor"
       fill="currentColor"
-      stroke-width="0"
       viewBox="0 0 512 512"
       height="1em"
       width="1em"

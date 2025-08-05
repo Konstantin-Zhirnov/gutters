@@ -1,6 +1,5 @@
-'use client'
-
 import { MenuLink } from './MenuLink'
+
 import { links } from '../constants'
 
 import styles from './Menu.module.css'

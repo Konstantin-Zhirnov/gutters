@@ -9,9 +9,8 @@ import { Proud } from './components/Proud'
 import { Warranties } from './components/Warranties'
 
 import { Customer } from './components/Customer'
-import { WorkShowcase } from '@/app/components/WorkShowcase'
-import { GetInTouch } from '@/app/components/GetInTouch'
-import { Certificates } from '@/app/components/Certificates'
+import { WorkShowcase } from './components/WorkShowcase'
+import { GetInTouch } from './components/GetInTouch'
 
 export default function Home() {
   return (
@@ -31,8 +30,6 @@ export default function Home() {
       <Warranties />
 
       <GetInTouch />
-
-      <Certificates />
     </>
   )
 }
