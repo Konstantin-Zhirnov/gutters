@@ -9,6 +9,7 @@ import { MobileMenu } from './MobileMenu'
 import { Wrapper } from '../Wrapper'
 
 import styles from './Header.module.css'
+import Link from 'next/link'
 
 export const Header = () => {
   const [isMobileMenu, setIsMobileMenu] = useState(false)
@@ -38,7 +39,9 @@ export const Header = () => {
     <header className={styles.container}>
       <Wrapper classes={styles.header}>
         <div className={styles.flex}>
-          <Image alt="Aarsen gutters" height={135} src="/assets/logo.png" width={320} priority />
+          <Link href="/">
+            <Image alt="Aarsen gutters" height={135} src="/assets/logo.png" width={320} priority />
+          </Link>
 
           <Contacts setIsMobileMenu={setIsMobileMenu} />
         </div>
