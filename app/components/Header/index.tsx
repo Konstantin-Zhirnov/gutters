@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 import { Contacts } from './Contacts'
 import { Menu } from './Menu'
@@ -9,7 +10,6 @@ import { MobileMenu } from './MobileMenu'
 import { Wrapper } from '../Wrapper'
 
 import styles from './Header.module.css'
-import Link from 'next/link'
 
 export const Header = () => {
   const [isMobileMenu, setIsMobileMenu] = useState(false)
